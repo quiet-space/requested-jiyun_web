@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf" class="bg-dark text-white">
+  <q-layout view="lHh Lpr lFf" class="bg-dark">
 
 
     <q-drawer
