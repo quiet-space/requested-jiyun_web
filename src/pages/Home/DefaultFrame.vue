@@ -16,12 +16,8 @@
     >
 
 
-      <q-input v-model="content"
-               outlined readonly
-
-               style="min-width: 50vw;"
-               type="textarea" autogrow
-               input-class="text-white"
+      <pre v-text="content"
+           style="min-width: 50vw;"
       />
     </q-scroll-area>
 
