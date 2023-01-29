@@ -4,6 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap');
 
+@font-face {
+  font-family: 'Chosunilbo_myungjo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -11,12 +18,15 @@
 
 pre {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  overflow: auto;
+  white-space: pre-wrap;
+  color: white;
 }
 
 .menu_title {
   font-family: "Quicksand", Serif;
   font-size: 36pt;
-  color: white
+  color: white;
 }
 
 .character_card {
@@ -35,4 +45,28 @@ pre {
   font-size: 15px;
   color: gray;
   width: 100%;
+}
+
+.character_detail_name {
+  font-family: 'Chosunilbo_myungjo';
+  font-size: 25px;
+  color: white;
+}
+
+.character_detail_sub_name {
+  font-family: 'Noto Serif JP', Serif;
+  font-size: 16px;
+  color: white;
+}
+
+.character_detail_simple_info {
+  font-family: 'Chosunilbo_myungjo';
+  font-size: 16px;
+  color: white;
+}
+
+.character_saying {
+  font-family: 'Chosunilbo_myungjo';
+  font-size: 21px;
+  color: white;
 }

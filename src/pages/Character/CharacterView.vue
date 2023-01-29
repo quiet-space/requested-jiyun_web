@@ -1,7 +1,7 @@
 <template>
   <div class="q-gutter-y-xl flex- flex-center">
 
-    <div class="menu_title">CHARACTER</div>
+    <div class="menu_title text-center">CHARACTER</div>
 
 
     <div id="entire_container">
@@ -19,8 +19,8 @@
 
         <div class="row q-gutter-md character_card_div">
           <q-card class="character_card flex justify-center items-end bg-dark"
-                  v-for="i of 13" :key="i"
-                  @click="loadCharacterDetail(i)"
+                  v-for="sn of 13" :key="sn"
+                  @click="loadCharacterDetail(sn)"
           >
 
             <q-img :src="shortImage" class="fit"
@@ -54,12 +54,16 @@
 <script setup>
 
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 
 const shortImage = ref("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FzUA5K%2FbtrXm8VKDW5%2FAaKR0buvpCLxqoWVz6eoTk%2Fimg.png");
 
-const loadCharacterDetail = () => {
+const $router = useRouter();
 
-}
+const loadCharacterDetail = (sn) => {
+
+  $router.push({ name: "character:detail", params: { sn } });
+};
 
 </script>
 

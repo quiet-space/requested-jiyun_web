@@ -1,20 +1,26 @@
 
 const routes = [
   {
-    path: '/',
+    path: '/main',
     component: () => import('layouts/MainLayout.vue'),
     children: [
       {
-        path: '',
+        path: '/index',
         component: () => import('pages/IndexPage.vue')
       },
       {
-        path: '/home',
+        path: '/',
         component: () => import('pages/Home/DefaultFrame.vue')
       },
       {
         path: '/character',
         component: () => import('pages/Character/CharacterView.vue')
+      },
+      {
+        name: 'character:detail',
+        path: `/character/detail/:sn`,
+        component: () => import('pages/Character/components/CharacterDetail.vue'),
+        props: true
       },
       {
         path: '/works',
